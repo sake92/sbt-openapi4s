@@ -26,11 +26,7 @@ lazy val api = project
   .enablePlugins(OpenApi4sPlugin)
   .settings(
     scalaVersion := "3.7.1",
-    libraryDependencies ++= Seq(
-      "ba.sake" %% "tupson" % "0.30.0",
-      "ba.sake" %% "validson" % "0.19.0",
-      "ba.sake" %% "sharaf" % "0.9.3"
-    ),
+    libraryDependencies += "ba.sake" %% "sharaf" % "0.19.0",
     openApi4sPackage := "com.example.api"
   )
 ```

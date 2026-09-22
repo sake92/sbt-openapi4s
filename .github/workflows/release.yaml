@@ -2,6 +2,7 @@ name: Release
 
 on:
   push:
+    branches: main
     tags: "v*"
 
 permissions:
@@ -27,7 +28,7 @@ jobs:
       - name: Set up sbt
         uses: sbt/setup-sbt@v1
 
-      - name: Publish release
+      - name: Publish snapshot or release
         run: sbt -batch ci-release
         env:
           PGP_PASSPHRASE: ${{ secrets.PGP_PASSPHRASE }}
