@@ -1,0 +1,5 @@
+> openApi4sGenerate
+> checkInitial
+$ copy-file openapi-updated.json src/main/resources/openapi.json
+> openApi4sGenerate
+> checkUpdated
