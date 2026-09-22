@@ -1,0 +1,1 @@
+# sbt-openapi4s
