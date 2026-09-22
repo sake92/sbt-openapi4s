@@ -1,3 +1,4 @@
+
 # sbt-openapi4s
 
 sbt 2 plugin for [OpenAPI4s](https://github.com/sake92/openapi4s). It generates editable Scala 3 models, server code, and clients from an OpenAPI document or local JSON Schema input.
